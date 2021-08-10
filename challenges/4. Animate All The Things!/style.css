@@ -1,0 +1,87 @@
+body {
+  height: 80vh;
+  background-color: cadetblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  25%,
+  50% {
+    transform: rotate(180deg);
+  }
+  75%,
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes domino {
+  0%,
+  30%,
+  80%,
+  100% {
+    transform: none;
+  }
+  50% {
+    transform: scaleY(1.8);
+  }
+}
+
+body > div {
+  margin: 30px;
+}
+#circle-div {
+  display: flex;
+  justify-content: center;
+  animation: rotate 2s ease-in-out infinite;
+}
+
+#circle-div > div {
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  border-radius: 50%;
+  margin: 10px;
+}
+
+#domino-div {
+  display: flex;
+  justify-content: center;
+}
+
+#domino-div > div {
+  margin: 2px;
+  width: 10px;
+  height: 30px;
+  background-color: white;
+}
+
+#domino-1 {
+  animation: domino 1s ease-in-out infinite;
+}
+
+#domino-2 {
+  animation: domino 1s ease-in-out infinite;
+  animation-delay: 0.2s;
+}
+
+#domino-3 {
+  animation: domino 1s ease-in-out infinite;
+  animation-delay: 0.4s;
+}
+
+#domino-4 {
+  animation: domino 1s ease-in-out infinite;
+  animation-delay: 0.5s;
+}
+
+#domino-5 {
+  animation: domino 1s ease-in-out infinite;
+  animation-delay: 0.6s;
+}
