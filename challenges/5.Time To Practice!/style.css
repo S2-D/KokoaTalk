@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;600;700;800&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+#container {
+  width: 600px;
+  height: 1100px;
+  border: 6px solid turquoise;
+  margin: 100px auto;
+  padding: 80px 60px;
+}
+
+#top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 60px;
+  font-size: 40px;
+  font-weight: 800;
+}
+
+.top-bar__column:nth-child(3) {
+  width: 10px;
+  height: 10px;
+}
+
+#detail-header {
+  display: flex;
+  justify-content: space-around;
+}
+
+.detail-header__cover {
+  width: 200px;
+  height: 200px;
+  border-radius: 20px;
+  background-color: gold;
+  border: 3px solid black;
+  color: white;
+  margin-right: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.detail-header__info {
+  width: 280px;
+  padding: 10px 0px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.detail-header__title {
+  font-size: 52px;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 18px;
+}
+.detail-header__curator {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+#buttons {
+  display: flex;
+  justify-content: space-between;
+  margin: 60px 0;
+}
+
+#buttons > div {
+  border: black 3px solid;
+  padding: 20px;
+  font-size: 40px;
+  font-weight: 600;
+  border-radius: 70px;
+  border-width: 3px 3px 8px 3px;
+}
+
+#buttons > div:first-child {
+  width: 240px;
+  font-size: 30px;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#buttons > div:first-child > i {
+  margin-right: 10px;
+}
+
+#track-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.track {
+  display: flex;
+  margin-bottom: 60px;
+}
+
+.track__cover {
+  width: 70px;
+  height: 70px;
+  border-radius: 15px;
+  border: 3px solid black;
+  margin-right: 15px;
+}
+
+.track:first-child .track__cover {
+  background-color: orangered;
+}
+
+.track:nth-child(2) .track__cover {
+  background-color: violet;
+}
+.track:nth-child(3) .track__cover {
+  background-color: royalblue;
+}
+.track:nth-child(4) .track__cover {
+  background-color: turquoise;
+}
+
+#track__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.track__title {
+  font-size: 25px;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.track__artist {
+  font-size: 18px;
+  font-weight: 500;
+}
