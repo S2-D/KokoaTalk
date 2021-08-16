@@ -38,3 +38,12 @@
   font-size: 32px;
   color: white;
 }
+
+.more-suggestions__icon-image img {
+  width: 40px;
+}
+
+.more-suggestions__icon:nth-child(3) img {
+  width: 60px;
+  border-radius: 10px;
+}
